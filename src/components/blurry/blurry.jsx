@@ -19,10 +19,10 @@ export default function Blurry(props) {
                             : "h-0"
                     } ${
                         isExpanded() ? "w-96" : "w-60"
-                    } overflow-hidden flex items-center justify-center object-cover shadow-lg transition-all duration-500`}
+                    } overflow-hidden flex items-center justify-center object-cover transition-all duration-500`}
                 >
                     <img
-                        class={`min-w-full ${
+                        class={`min-w-full shadow-lg  ${
                             props.state !== "playing"
                                 ? "blur-[0px]"
                                 : blurAmountList[props.submittedGuessesLength]
